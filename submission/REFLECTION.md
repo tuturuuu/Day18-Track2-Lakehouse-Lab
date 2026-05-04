@@ -1,3 +1,9 @@
+**Nhóm:**
+
+- Nguyễn Trần Khương An : mail-github (khuongan66@gmail.com), mail-vinuni(26ai.anntk@vinuni.edu.vn) , github username: kuongan
+- Phạm Minh Việt: mail-github (viettpm26@gmail.com), mail-vinuni (26ai.vietpm@vinuni.edu.vn),  github username: tuturuuu
+
+
 Anti-pattern dễ vướng nhất: "transform trực tiếp trên Bronze và không enforce schema/ownership".
 
 Giải thích: để nhanh, team thường sửa, làm sạch hoặc enrich dữ liệu ngay trên layer Bronze (ghi đè file, chạy notebook trực tiếp lên path của Bronze) thay vì coi Bronze như nguồn nguyên thủy bất biến. Hậu quả thực tế gồm schema drift (cột xuất hiện/biến mất bất ngờ), duplicate hoặc partial rows, và downstream Silver/Gold bị ôm technical debt — rollback bằng time-travel trở nên rối rắm, test không đáng tin cậy, và báo cáo sai lệch.
